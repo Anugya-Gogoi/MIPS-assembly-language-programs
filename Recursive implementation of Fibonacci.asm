@@ -27,7 +27,7 @@ li $v0,1
 syscall # print result integer
 li $v0, 10
 syscall # end the program
-#-------------Function-------------
+
 fibFunc: 
 addi $sp,$sp,-12 # modify stack pointer to accommodate 3 bytes
 sw $ra,0($sp) # store return address in stack
