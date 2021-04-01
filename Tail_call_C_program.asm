@@ -45,6 +45,7 @@ beq $a0, $zero, exitFunc # go to exitFunc if n is 0
 add $a1, $a1, $a0 # add n to acc
 addi $a0, $a0, -1 # subtract 1 from n
 j sum # go to sum
+
 exitFunc:
 move $v0, $a1 # return value acc
 jr $ra # return to caller
